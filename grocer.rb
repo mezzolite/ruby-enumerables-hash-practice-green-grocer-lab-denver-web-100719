@@ -43,5 +43,5 @@ def checkout(cart, coupons)
   total = applied_clearence.reduce(0) do |acc, (key, value)| 
     acc += value[:price] + value[:count]
   end
-  total > 100 ? 
+  total > 100 ? total * 0.9 : total
 end
