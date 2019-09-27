@@ -37,5 +37,5 @@ cart
 end
 
 def checkout(cart, coupons)
-  # code here
+  
 end
