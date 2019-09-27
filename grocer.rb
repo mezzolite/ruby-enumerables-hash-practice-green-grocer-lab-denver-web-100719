@@ -13,7 +13,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  coupons.each do |item|
+  coupons.each do |coupon|
   if cart[item] do
     cart['#{item} W/COUPON']
 end
