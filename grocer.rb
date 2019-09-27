@@ -14,6 +14,7 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
+    item = coupons
   if cart[item] do
     cart['#{item} W/COUPON']
 end
