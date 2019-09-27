@@ -40,5 +40,8 @@ def checkout(cart, coupons)
   hash_cart = consolidate_cart(cart)
   applied_coupons = apply_coupons(hash_cart, coupons)
   applied_clearence = apply_clearance(applied_coupons)
-  total = applied_clearence.reduce(0) {|acc, (key, value)| acc += value[:price] + value[:]}
+  total = applied_clearence.reduce(0) do |acc, (key, value)| 
+    acc += value[:price] + value[:count]
+  end
+  
 end
